@@ -39,8 +39,6 @@ abstract class FlockForegroundService(
             .setContentTitle(serviceName)
             .build()
 
-        startForeground(foregroundId, notification)
-
         create()
     }
 
@@ -77,4 +75,5 @@ abstract class FlockForegroundService(
             PackageManager.GET_SERVICES or
             PackageManager.GET_RECEIVERS or
             PackageManager.GET_META_DATA
+
 }
