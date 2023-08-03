@@ -2,19 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.flocksafety.android.validator">
 
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission
-        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,15 +13,6 @@
         <service
             android:name="com.flocksafety.android.validator.service.MidAssemblyTest"
             android:exported="true" />
-
-        <service
-            android:name=".service.CameraTest"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.flocksafety.android.validator.service.CameraTest" />
-            </intent-filter>
-        </service>
 
         <activity
             android:name=".service.CameraActivity"
