@@ -12,3 +12,5 @@ adb shell am start-foreground-service com.flocksafety.android.validator/<SERVICE
 adb shell am broadcast -a <ACTION_NAME> -c <CATEGORY_NAME> com.flocksafety.android.validator 
 
 The current service in there (MidAssemblyTest) can be used for basic reference.
+
+After you have completed the project, in the README on your branch list the adb commands you use to run the service, broadcast and any other commands you use to run the project.
